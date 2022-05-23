@@ -1,0 +1,40 @@
+1) What is Selenium? What are the different Selenium components? Explain about Selenium Webdriver.
+	* Selenium is the free automated testing framework used to validate web application across different browsers and platform.
+	* We can use the multiple programming languages like Java,C#,python,etc to create selenium test scripts.
+   Selenium software tools:
+     1.Selenium integrated development environment(IDE)
+     2.Selenium remote control(RC)
+     3.WebDriver
+     4.Selenium Grid.
+2) How does Selenium communicate with the Web browsers?
+	* To communicate between server and client (browser), selenium web driver uses JSON.
+	* Each Browser Driver has its own HTTP server.
+3.What are the locators available  to find an element using Selenium?
+	id,classname,linktext,partial linktext, name, xpath, attribute.
+4. Why ID is preferable than X-Path?
+	Locating with ID is faster than xpath; as with xpath, locating element involved traversing through the DOM
+     	IDs are unique.
+5.How to select value in dropdown?
+	 * Import the package org.openqa.selenium.support.ui.Select
+   	 * Instantiate the drop-down box as an object, Select in Selenium WebElement
+    	*  create an object ;
+    	*  select d1 =new select();
+    	* now use that objects
+    	* 3 locators canbe use in dropdown  1.byindex 2.byvisibleindex 3.byvalue.d1.selectbyindex();
+6) What is the difference between Absolute Path and Relative Path?
+	Absolute XPath begins from the root of the beginner
+     	but relative XPath begins from the grandparent tag, parent tag, child tag.
+7) How to verify if the given check box is checked or not (it is not taught but you can explore) Try here: http://leafground.com/pages/checkbox.html
+	We can verify the checbox by using isSelected() method over the checkbox.
+    	isSelected() method returns the boolean values .
+8)Difference between System.setProperty and WebDriverManager
+	WebDriverManager automates the browser setup in the Selenium code. 
+	By default, it downloads the latest version of the browser binary and also the binary for the appropriate platform.setProperty method is used to configure the browser driver path
+9) Write the syntax for preceding and following x-paths.
+	//Eldersibling xpath/following-sibling::youngsibling tagname/xpath
+    	//youngsibling xpath/following-sibling::Eldersibling tagname/xpath
+10) How to get an attribute value using Selenium WebDriver?
+	To get the attribute value using selenium webdriver, we can use 'element. getAttribute(attributeName)'.
+    	If we try to get the attribute value that doesn't exist for the tag, it will return a null value
+   	object name.find element.(by.locators).getattribute("value");
+	print the value entered in the console.
